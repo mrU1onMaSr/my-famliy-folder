@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>my famliy folder</title>
+        <style>
+            body{
+              text-align: center;
+            }
+            h4{
+                font-weight: bold;
+            }
+            img{
+                width: 400px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>My Famliy folder</h1>
+        <img id="pi" src="pij.png">
+        <h4 id="hello">press the button!!</h4>
+        <button onclick="fn_swich()">NEXT</button>
+        <script>
+            var pick = ["pij.jpg","me.jpg","mom.jpg","dad.jpg","dog1.jpg","dog2.jpg"];
+            var names = ["press the button!!","yuvan","priyanka","gopi","pandu","burfi"];
+            var i = 0;
+            function fn_swich(){
+                i++;
+                document.getElementById("pi").src=pick[i];
+                document.getElementById("hello").innerHTML = names[i]
+                if(i>4){
+                i = 0;
+                }
+            
+
+            }
+        </script>
+    </body>
+</html> 
